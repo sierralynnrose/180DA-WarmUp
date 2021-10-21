@@ -399,7 +399,7 @@ while True:
 	first_ten_flag = 1
 
     if(first_ten_flag):
-    	difference_gyro_Z = counter_array[counter] - gyroZangle
+    	difference_gyro_Z = gyroZangle - counter_array[counter]
 	if(difference_gyro_Z > 5):
 	    outputString += "FORWARD PUSH DETECTED!"
 
